@@ -200,18 +200,17 @@ footer {
 
 .modo-escuro-btn {
     background-color: #333; 
-    position: fixed;
     right: 10px;
     bottom: 90%;
     border: none; 
     color: #f1f1f1; 
     padding: 12px 25px; 
-    text-align: center; 
+    text-align: 10px; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 16px; 
     font-family: 'Poppins', sans-serif; 
-    margin: 10px 2px; 
+    margin: 2px ; 
     cursor: pointer; 
     border-radius: 25px; 
     transition: 0.3s ease; 
