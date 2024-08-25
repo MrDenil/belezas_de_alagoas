@@ -1,164 +1,306 @@
-
 #banner {
     background-image: url('img/praiagunga.jpg');
-    background-position: 50% 50%;
+    background-position: center;
     background-size: cover;
     width: 100%;
-    height: 70px;
-    padding: 0%;
-    margin: 0%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-
 
 body {
     font-family: 'Poppins', sans-serif;
-}
-
-.navbar ul{    
-    background-image: url('img/praiagunga.jpg');
-    background-position: 70% 70%;
-    background-size: cover;
-    padding: 0px;
-    margin: 10px;
-    width: 100%;
-}
-
-.navbar a{
-    color:whitesmoke
-}
-
-.navbar a:hover{
-    background-color: black;
-}
-
-header{
-    background: rgb(255, 255, 255);
-    height: 100px;
-    text-align: center;
-    
-}
-
-
-body {
-   
-    margin: 0px;
-    padding: 0px;
-    
-       
-}
-
-header {
-    margin: 0px;
-    padding: 20px;
-    text-align: center;
-
-}
-
- ul {
-    list-style: none;
     margin: 0;
     padding: 0;
 }
 
- li {
-    display: inline-block;
-    margin-right: 20px;
+header {
+    background: rgb(255, 255, 255);
+    height: 100px;
+    text-align: center;
+    padding: 20px;
 }
 
- a {
+.navbar ul {
+    background-image: url('img/praiagunga.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 10px 20px;
+}
+
+.navbar a {
+    color: whitesmoke;
     text-decoration: none;
-    color: #333;
+}
+
+.navbar a:hover {
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 section {
-    color:#333;
     padding: 20px;
+    color: #333;
 }
 
 h2 {
     font-size: 24px;
 }
 
-
-
-    .praia{
-        height: 250px;
-        width: 350px;
-        border-radius: 10px;
-        transition: 0.5s all;
-    }
-    .culinaria{
-        height: 250px;
-        width: 350px;
-        border-radius: 10px;
-        transition: 0.5s all;
-    }
-    .lagoa{
-        height: 250px;
-        width: 350px;
-        border-radius: 10px;
-        transition: 0.5s all;
-    }
-    .passeio{
-    height: 250px;
-    width: 350px;
-    border-radius: 10px;
-    transition: 0.5s all;
-    }
-
-    *{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-    }
-
-footer { 
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
     background-image: url('img/praiagunga.jpg');
     background-position: 50% 100%;
-    height: 70px; 
+    height: 70px;
     color: white;
-    font-size: 20px;;
-    font-family: 'Poppins', sans-serif;
-    
-    
+    font-size: 20px;
 }
-.whats{
+
+.whats {
     position: fixed;
     right: 10px;
     bottom: 10px;
 }
-@media screen and (max-width:1200px) {
-    .body {
-        flex-direction: column-reverse;
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+
+.galeria img:hover {
+    height: 270px;
+    width: 370px;
+    border-radius: 15px;
+}
+
+.modo-escuro {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.modo-escuro header {
+    background-color: #1f1f1f;
+}
+
+.modo-escuro .navbar a {
+    color: #ffffff;
+}
+
+.modo-escuro footer {
+    background-color: #1f1f1f;
+}
+
+.modo-escuro section {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.modo-escuro .galeria img {
+    filter: brightness(0.8);
+}
+
+@media screen and (max-width: 1200px) {
+    .galeria img {
+        height: 200px;
+        width: 300px;
     }
-   
-}
-.praia:hover { 
-    height: 270px;
-    width: 370px;
-    border-radius: 15px;
+
+    .galeria img:hover {
+        height: 220px;
+        width: 320px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin: 5px;
+    }
+
+    footer {
+        height: 60px;
+        font-size: 18px;
+    }
 }
 
-.culinaria:hover { 
-    height: 270px;
-    width: 370px;
-    border-radius: 15px;
+@media screen and (max-width: 768px) {
+    .galeria img {
+        height: 150px;
+        width: 250px;
+    }
+
+    .galeria img:hover {
+        height: 170px;
+        width: 270px;
+    }
+
+    .navbar li {
+        margin: 5px 10px;
+    }
+
+    footer {
+        height: 50px;
+        font-size: 16px;
+    }
 }
 
-.lagoa:hover { 
-    height: 270px;
-    width: 370px;
-    border-radius: 15px;
+@media screen and (max-width: 480px) {
+    .galeria img {
+        height: 120px;
+        width: 200px;
+    }
+
+    .galeria img:hover {
+        height: 140px;
+        width: 220px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    footer {
+        height: 40px;
+        font-size: 14px;
+    }
 }
 
-.passeio:hover { 
-    height: 270px;
-    width: 370px;
-    border-radius: 15px;
+.modo-escuro-btn {
+    background-color: #333; 
+    position: fixed;
+    right: 10px;
+    bottom: 90%;
+    border: none; 
+    color: #f1f1f1; 
+    padding: 12px 25px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    font-family: 'Poppins', sans-serif; 
+    margin: 10px 2px; 
+    cursor: pointer; 
+    border-radius: 25px; 
+    transition: 0.3s ease; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.modo-escuro-btn:hover {
+    background-color: #555; 
+    color: #ffffff; 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-2px); 
+}
+
+.modo-escuro-btn:active {
+    background-color: #222;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(0px);
+}
+
+.cadastro-container {
+    max-width: 400px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #f7f7f7; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.cadastro-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+.cadastro-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.cadastro-form input:focus {
+    border-color: #4CAF50;
+}
+
+.cadastro-btn {
+    background-color: #4CAF50;
+    border: none; 
+    color: white; 
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px; 
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.cadastro-btn:hover {
+    background-color: #45a049; 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.cadastro-btn:active {
+    background-color: #3e8e41; 
+}
+
+@media screen and (max-width: 480px) {
+    .cadastro-container {
+        padding: 15px;
+    }
+
+    .cadastro-btn {
+        width: 100%;
+    }
 }
